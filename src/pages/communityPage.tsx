@@ -25,8 +25,17 @@ export const CommunityPage: FC = () => (
       >
         <BackArrow />
       </Link>
-      <h1>Community</h1>
-      <div>.</div>
+      <h1 style={{ marginLeft: "10%" }}>Community</h1>
+
+      <Link to={"/friends"}>
+        <img
+          src="/addfriend.png"
+          width="40"
+          height="40"
+          alt=""
+          style={{ marginRight: "15px" }}
+        />
+      </Link>
     </div>
     <div>
       <Events />
