@@ -1,7 +1,8 @@
-import { Card, Col, Divider, Row, Tag } from "antd";
+import { Button, Card, Col, Divider, Input, Row, Tag } from "antd";
 import { FC } from "react";
+import { Leaf } from "../Leaf";
 
-export const ExploreContent: FC = () => {
+export const JoinContent: FC = () => {
   const cardStyle = {
     boxShadow: "3px 3px 3px 3px rgba(0, 0, 0, 0.2)",
     fontSize: "14px",
@@ -14,10 +15,52 @@ export const ExploreContent: FC = () => {
       style={{
         display: "flex",
         justifyContent: "center",
-        paddingTop: "20px",
+        paddingTop: "30px",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
+      <div
+        style={{
+          backgroundColor: "#ffffff",
+          padding: "15px",
+          marginBottom: "40px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          fontWeight: 700,
+          fontSize: "18px",
+          borderRadius: "20px",
+          boxShadow: "3px 3px #bcd4d4",
+          border: "2px solid #bcd4d4",
+          gap: "10px",
+        }}
+      >
+        <div style={{ fontSize: "23px" }}>JOIN A PRIVATE LEAGUE?</div>
+        <div style={{ gap: "3px", fontWeight: 500 }}>
+          <div>
+            Join your friend's league, compete together for more rewards and{" "}
+            <img src="/greenleaf.png" width="15" height="15" alt="" /> !
+          </div>
+        </div>
+        <Input placeholder="Enter League PIN" style={{width: "50%"}}/>
+        <Button style={{backgroundColor: "#75ebc5", fontWeight: 700}}>JOIN LEAGUE</Button>
+      </div>
       <div>
+        <div
+          style={{
+            marginBottom: "20px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            fontWeight: 700,
+            fontSize: "25px",
+          }}
+        >
+          Explore Public Leagues
+        </div>
         <Row gutter={[8, 16]} style={{ paddingBottom: "20px", width: "90vw" }}>
           <Col span={12}>
             <div>
