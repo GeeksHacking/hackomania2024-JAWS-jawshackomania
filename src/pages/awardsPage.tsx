@@ -83,7 +83,6 @@ export const AwardsPage: FC = () => {
       </div>
 
       <AwardCard />
-
       <MedalsCard />
       <LeaderboardFilter
         selectedKey={selectedMenuItem}

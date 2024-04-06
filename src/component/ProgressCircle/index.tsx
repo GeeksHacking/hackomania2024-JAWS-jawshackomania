@@ -12,7 +12,7 @@ export const ProgressCircle: FC = () => {
   const textInCircle = (percent?: number) => (
     <div
       style={{
-        fontSize: 14,
+        fontSize: 23,
         display: "flex",
         flexDirection: "column",
         fontWeight: "800",
@@ -34,7 +34,7 @@ export const ProgressCircle: FC = () => {
         percent={93}
         format={(percent?: number) => <div>{textInCircle(percent)}</div>}
         strokeColor={conicColors}
-        size={200}
+        size={250}
       />
     </div>
   );
