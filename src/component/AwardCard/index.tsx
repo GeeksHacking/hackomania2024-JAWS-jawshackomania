@@ -45,13 +45,12 @@ export const AwardCard: FC = () => {
             gap: "5px"
           }}
         >
-          <Avatar style={{ backgroundColor: "#7b9696" }} size={50} icon={<UserOutlined />} />
-          <div>Ally Ang</div>
+          <img src="/badge.png" alt="" height="80" width="80"/>
         </div>
         <div
           style={{
             backgroundColor: "rgb(255,255,255)",
-            height: "80px",
+            height: "110px",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -72,10 +71,10 @@ export const AwardCard: FC = () => {
               alignItems: "center",
             }}
           >
-            <img src="/twentythree.png" width="30" height="30" alt="" />
+            <img src="/twentythree.png" width="50" height="50" alt="" />
             <div>
-              <div style={{ fontWeight: "900" }}> Level 23 </div>
-              <div style={{ fontSize: "12px" }}>
+              <div style={{ fontWeight: "900", fontSize: "18px" }}> Level 23 </div>
+              <div style={{ fontSize: "15px" }}>
                 46 <Leaf /> to next level! Keep going!
               </div>
             </div>

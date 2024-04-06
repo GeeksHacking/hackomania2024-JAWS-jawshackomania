@@ -22,7 +22,7 @@ export const MedalsCard: FC = () => {
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "#bae7e8",
-          width: "110px",
+          width: "130px",
           padding: "15px",
           borderRadius: "15px",
           boxShadow: "3px 3px #bcd4d4",
@@ -35,7 +35,7 @@ export const MedalsCard: FC = () => {
             justifyContent: "center",
             fontWeight: "700",
             paddingBottom: "10px",
-            fontSize: "19px"
+            fontSize: "19px",
           }}
         >
           {medalType === "gold" && <div>Gold</div>}
@@ -69,19 +69,31 @@ export const MedalsCard: FC = () => {
     <div
       style={{
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
         justifyContent: "center",
         alignContent: "center",
         alignItems: "center",
-        height: "30%",
-        width: "100vw",
-        paddingLeft: "50px",
-        paddingRight: "50px"
+        gap: "12px"
       }}
     >
-      {medal("gold")}
-      {medal("silver")}
-      {medal("bronze")}
+      <div style={{fontSize: "18px", fontWeight: "700", color: "#787878"}}>Medal Collections</div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignContent: "center",
+          alignItems: "center",
+          height: "30%",
+          width: "100vw",
+          paddingLeft: "50px",
+          paddingRight: "50px",
+        }}
+      >
+        {medal("gold")}
+        {medal("silver")}
+        {medal("bronze")}
+      </div>
     </div>
   );
 };
