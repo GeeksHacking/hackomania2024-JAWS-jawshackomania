@@ -8,8 +8,8 @@ export const CurrentWeek: FC = () => {
       <div
         style={{
           backgroundColor: "rgb(26, 33, 25, 0.6)",
-          width: "150px",
-          height: "60px",
+          width: "250px",
+          height: "120px",
           color: "#ffffff",
           fontWeight: "600",
           borderRadius: "10px",
@@ -23,10 +23,10 @@ export const CurrentWeek: FC = () => {
         <div
           style={{
             position: "relative",
-            top: "-12px",
+            top: "-28px",
             backgroundColor: "#ffffff",
-            height: "20px",
-            width: "20px",
+            height: "40px",
+            width: "40px",
             borderRadius: "50%",
             alignItems: "center",
             justifyContent: "center",
@@ -34,20 +34,21 @@ export const CurrentWeek: FC = () => {
             border: "2px solid rgb(26, 33, 25, 0.6)",
           }}
         >
-          <Leaf />
+          <img src="/greenleaf.png" width="25" height="25" alt="" />
         </div>
         <div
           style={{
-            marginTop: "-10px",
+            marginTop: "-20px",
             backgroundColor: "rgb(26, 33, 25)",
-            width: "90px",
-            fontSize: "12px",
-            height: "20px",
+            width: "140px",
+            fontSize: "16px",
+            height: "40px",
             color: "#ffffff",
             fontWeight: "600",
             borderRadius: "10px",
             alignContent: "center",
             textAlign: "center",
+            marginBottom: 10 
           }}
         >
           Week 1 Day 5

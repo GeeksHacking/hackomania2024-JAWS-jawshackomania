@@ -22,7 +22,6 @@ export const Banner: FC = () => {
     <Menu
       mode="horizontal"
       style={{
-        minWidth: 0,
         flex: 'auto',
         backgroundColor: '#7fb9ba',
         fontSize: '12px',

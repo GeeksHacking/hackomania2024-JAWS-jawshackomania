@@ -22,6 +22,7 @@ export const MedalsCard: FC = () => {
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "#bae7e8",
+          width: "130px",
           padding: "15px",
           borderRadius: "15px",
           boxShadow: "3px 3px #bcd4d4",
@@ -32,13 +33,14 @@ export const MedalsCard: FC = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            fontWeight: "800",
+            fontWeight: "700",
             paddingBottom: "10px",
+            fontSize: "19px",
           }}
         >
-          {medalType === "gold" && <div>Ally Ang</div>}
-          {medalType === "silver" && <div>Lionel Lim</div>}
-          {medalType === "bronze" && <div>Perry Png</div>}
+          {medalType === "gold" && <div>Gold</div>}
+          {medalType === "silver" && <div>Silver</div>}
+          {medalType === "bronze" && <div>Bronze</div>}
         </div>
         <img src={`/${medalType}.png`} width="50" height="50" alt="" />
         <div
@@ -64,10 +66,34 @@ export const MedalsCard: FC = () => {
     </div>
   );
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
-      {medal("gold")}
-      {medal("silver")}
-      {medal("bronze")}
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignContent: "center",
+        alignItems: "center",
+        gap: "12px"
+      }}
+    >
+      <div style={{fontSize: "18px", fontWeight: "700", color: "#787878"}}>Medal Collections</div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignContent: "center",
+          alignItems: "center",
+          height: "30%",
+          width: "100vw",
+          paddingLeft: "50px",
+          paddingRight: "50px",
+        }}
+      >
+        {medal("gold")}
+        {medal("silver")}
+        {medal("bronze")}
+      </div>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import { JourneyPage } from "./pages/journeyPage";
 import { EcoTrackingPage } from "./pages/ecoTrackingPage";
 import { LeaguePage } from "./pages/leaguePage";
 import { GoalsPage } from "./pages/goalsPage";
+import { EventDetailPage } from "./pages/eventDetailPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/ecotracking" Component={EcoTrackingPage} />
         <Route path="/goals" Component={GoalsPage} />
         <Route path="/league" Component={LeaguePage} />
+        <Route path="/eventDetail" Component={EventDetailPage} />
         <Route Component={ProgressPage} />
       </Routes>
     </Router>
