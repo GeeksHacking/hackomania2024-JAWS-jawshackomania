@@ -7,6 +7,7 @@ export const CurrentWeek: FC = () => {
     <Link to={"/journey"}>
       <div
         style={{
+          marginTop: "-30px",
           backgroundColor: "rgb(26, 33, 25, 0.6)",
           width: "250px",
           height: "120px",
