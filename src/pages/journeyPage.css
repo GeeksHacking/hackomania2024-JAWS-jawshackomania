@@ -1,0 +1,51 @@
+.lightBulbIcon {
+  background-color: transparent;
+  border-radius: 100%;
+  box-shadow: 0px 0px 30px 30px rgba(255, 191, 0, 0.5);
+  position: relative;
+  animation-delay: 2s;
+  animation: walk 4s linear forwards;
+}
+
+@keyframes walk {
+  0% {
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 20px 20px rgba(255, 191, 0, 0.5);
+  }
+  15% {
+    right: 34px;
+    bottom: 0;
+    box-shadow: none;
+  }
+  30% {
+    right: 68px;
+    bottom: 0;
+    box-shadow: 0px 0px 20px 20px rgba(255, 191, 0, 0.5);
+  }
+  45% {
+    right: 102px;
+    bottom: 0;
+    box-shadow: none;
+  }
+  60% {
+    right: 138px;
+    bottom: 0;
+    box-shadow: 0px 0px 20px 20px rgba(255, 191, 0, 0.5);
+  }
+  75% {
+    right: 138px;
+    bottom: 40px;
+    box-shadow: 0px 0px 30px 30px rgba(255, 191, 0, 0.5);
+  }
+  90% {
+    right: 138px;
+    bottom: 80px;
+    box-shadow: 0px 0px 40px 40px rgba(255, 191, 0, 0.5);
+  }
+  100% {
+    right: 90px;
+    bottom: 90px;
+    box-shadow: 0px 0px 50px 50px rgba(255, 191, 0, 0.7);
+  }
+}
