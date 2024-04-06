@@ -93,17 +93,26 @@ export const JourneyPage: FC = () => {
         >
           <BackArrow />
         </Link>
-        <h1 style={{ marginLeft: "10%" }}>Achievements</h1>
+        <h1>Achievements</h1>
         <div>.</div>
       </div>
-      <Row style={{ width: "100%", justifyContent: "center" }}>
+      <Row style={{ width: "100%", display: "block", textAlign: "center" }}>
         {displayConfetti && <Confetti width={width} height={height} />}
-        <ImageMarker
-          src="/journeypath.png"
-          markers={markers}
-          markerComponent={CustomMarker}
-          onAddMarker={(marker: Marker) => setMarkers([...markers, marker])}
-        />
+        <div
+          style={{
+            display: "flex",
+            padding: "20px",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <ImageMarker
+            src="/journeypath.png"
+            markers={markers}
+            markerComponent={CustomMarker}
+            onAddMarker={(marker: Marker) => setMarkers([...markers, marker])}
+          />
+        </div>
       </Row>
     </PageTemplate>
   );

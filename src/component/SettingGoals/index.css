@@ -1,0 +1,51 @@
+.modalWrapper {
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 12px;
+
+  .ant-modal-content {
+    background-color: rgb(218, 245, 240);
+  }
+}
+
+.settingGoalsButton {
+  background-color: #5accb7;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.settingGoalsOkButton {
+  background-color: #5accb7;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.settingGoalsButton:hover,
+.settingGoalsOkButton:hover {
+  background-color: #358475 !important;
+}
+
+.settingGoalsCancelButton {
+  background-color: #ffffff;
+  color: #5accb7;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.settingGoalsCancelButton:hover {
+  color: #358475 !important;
+  border-color: #358475 !important;
+}
