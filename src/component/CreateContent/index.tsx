@@ -306,7 +306,7 @@ export const CreateContent: FC = () => {
             style={{
               fontSize: 25,
               fontWeight: 800,
-              paddingBottom: "50px",
+              paddingBottom: "30px",
             }}
           >
             Step 3
@@ -385,7 +385,7 @@ export const CreateContent: FC = () => {
                
                 errorLevel="H"
                 value="https://ant.design/"
-                style={{ border: "none", marginTop: "10px" }}
+                style={{ border: "none" }}
               />
             </Card>
           </div>
