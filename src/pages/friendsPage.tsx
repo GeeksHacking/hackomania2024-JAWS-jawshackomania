@@ -103,7 +103,7 @@ export const FriendsPage: FC = () => {
                   padding: "15px",
                 }}
               >
-                Friend Request
+                Friend Requests
               </div>
               <div
                 style={{
@@ -133,7 +133,7 @@ export const FriendsPage: FC = () => {
                     Hello! Connect with me to earn <Leaf />
                   </div>
                 </div>
-                <div>
+                <div style={{marginLeft: "40px"}}>
                   <a>
                     <img
                       onClick={() => {}}
@@ -181,7 +181,7 @@ export const FriendsPage: FC = () => {
                   </div>
                   <div>Hihi, I am interested in solar too!</div>
                 </div>
-                <div>
+                <div style={{marginLeft: "40px"}}>
                   <a>
                     <img
                       src="/minus.png"
@@ -212,7 +212,7 @@ export const FriendsPage: FC = () => {
                   marginTop: "-10px",
                 }}
               >
-                Friend Suggestion
+                Friend Suggestions
               </div>
               <div
                 style={{
@@ -242,7 +242,7 @@ export const FriendsPage: FC = () => {
                     Make new friends, Earn more <Leaf />
                   </div>
                 </div>
-                <div style={{ paddingLeft: "48px" }}>
+                <div style={{ paddingLeft: "88px" }}>
                   <img
                     onClick={() => {}}
                     src="/add.png"
@@ -280,7 +280,7 @@ export const FriendsPage: FC = () => {
                     Make new friends, Earn more <Leaf />
                   </div>
                 </div>
-                <div style={{ paddingLeft: "48px" }}>
+                <div style={{ paddingLeft: "88px" }}>
                   <img
                     onClick={() => {}}
                     src="/add.png"
@@ -318,7 +318,7 @@ export const FriendsPage: FC = () => {
                     Make new friends, Earn more <Leaf />
                   </div>
                 </div>
-                <div style={{ paddingLeft: "48px" }}>
+                <div style={{ paddingLeft: "88px" }}>
                   <img
                     onClick={() => {}}
                     src="/add.png"
@@ -356,7 +356,7 @@ export const FriendsPage: FC = () => {
                     Make new friends, Earn more <Leaf />
                   </div>
                 </div>
-                <div style={{ paddingLeft: "48px" }}>
+                <div style={{ paddingLeft: "88px" }}>
                   <img
                     onClick={() => {}}
                     src="/add.png"
@@ -394,7 +394,7 @@ export const FriendsPage: FC = () => {
                     Make new friends, Earn more <Leaf />
                   </div>
                 </div>
-                <div style={{ paddingLeft: "48px" }}>
+                <div style={{ paddingLeft: "88px" }}>
                   <img
                     onClick={() => {}}
                     src="/add.png"

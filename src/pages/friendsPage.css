@@ -1,5 +1,19 @@
 .ant-radio-button  .friend {
-  border: "#81cccc";
-  background: "#81cccc";
-  color: "#ffffff";
+  border: #81cccc;
+  background: #81cccc;
+  color: #ffffff;
+
 }
+
+.friend {
+  border: unset !important;
+  background: unset !important;
+  color: unset !important;
+}
+
+.friend .ant-radio-button-checked{
+  border: #81cccc;
+  background: #81cccc;
+  color: #ffffff !important;
+}
+
