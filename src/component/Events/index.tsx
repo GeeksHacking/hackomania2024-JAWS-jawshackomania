@@ -1,7 +1,8 @@
-import { Avatar, Button, Carousel, List } from "antd";
+import { Avatar, Badge, Button, Carousel, List } from "antd";
 import { FC } from "react";
 import { UserOutlined } from "@ant-design/icons";
 import { Leaf } from "../Leaf";
+import { Link } from "react-router-dom";
 
 interface Event {
   id: number;
@@ -51,11 +52,6 @@ export const Events: FC = () => {
       id: 1,
       name: "EcoPower Alliance",
       member: 183,
-    },
-    {
-      id: 2,
-      name: "Renewable Energy Warriors",
-      member: 164,
     },
     {
       id: 3,
@@ -110,18 +106,20 @@ export const Events: FC = () => {
           >
             Saved
           </div>
-          <div
-            style={{
-              border: "2px solid #46aba9",
-              borderRadius: "20px",
-              padding: "10px",
-              color: "#46aba9",
-              fontWeight: 800,
-              backgroundColor: "rgb(157, 196, 174, 0.2)",
-            }}
-          >
-            Suggested
-          </div>
+          <Badge count={3}>
+            <div
+              style={{
+                border: "2px solid #46aba9",
+                borderRadius: "20px",
+                padding: "10px",
+                color: "#46aba9",
+                fontWeight: 800,
+                backgroundColor: "rgb(157, 196, 174, 0.2)",
+              }}
+            >
+              Suggested
+            </div>
+          </Badge>
           <div
             style={{
               border: "2px solid #858585",
@@ -163,19 +161,39 @@ export const Events: FC = () => {
               <div
                 style={{
                   color: "#00695c",
-                  paddingBottom: "10px",
+                  paddingBottom: "20px",
                   fontWeight: "600",
+                  fontSize: "15px",
                 }}
               >
                 Held On: {event.date}
               </div>
-              <Button
-                type="primary"
-                style={{ marginBottom: "20px", backgroundColor: "#62e3cb" }}
-                onClick={() => {}}
+              <div
+                style={{
+                  display: "flex",
+                  alignContent: "center",
+                  justifyContent: "center",
+                }}
               >
-                Join Now!
-              </Button>
+                <Link to={"/eventDetail"}>
+                  <Button
+                    type="primary"
+                    style={{
+                      marginBottom: "20px",
+                      backgroundColor: "#5accb7",
+                      display: "flex",
+                      alignContent: "center",
+                      alignItems: "center",
+                      gap: "5px",
+                      justifyContent: "center",
+                      color: "#ffffff",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Join Now for 25 <Leaf />!
+                  </Button>
+                </Link>
+              </div>
             </div>
           ))}
         </Carousel>
@@ -252,24 +270,26 @@ export const Events: FC = () => {
               </List.Item>
             )}
           />
-          <div
-            style={{
-              backgroundColor: "#d6e8ff",
-              borderRadius: "12px",
-              padding: "10px",
-              display: "flex",
-              flexDirection: "row",
-              gap: "20px",
-            }}
-          >
-            <img src="team.png" width="50" height="50" alt="" />
-            <div style={{ fontWeight: 700, fontSize: "17px" }}>
-              <div>Start a new group!</div>
-              <div>
-                Organise your own event group and earn up to 200 <Leaf />
+          <Badge.Ribbon text="April Deal !" color="pink">
+            <div
+              style={{
+                backgroundColor: "#d6e8ff",
+                borderRadius: "12px",
+                padding: "10px",
+                display: "flex",
+                flexDirection: "row",
+                gap: "20px",
+              }}
+            >
+              <img src="team.png" width="50" height="50" alt="" />
+              <div style={{ fontWeight: 700, fontSize: "17px" }}>
+                <div>Start a new group!</div>
+                <div>
+                  Organise your own event group and earn up to 200 <Leaf />
+                </div>
               </div>
             </div>
-          </div>
+          </Badge.Ribbon>
         </div>
       </div>
     </div>
