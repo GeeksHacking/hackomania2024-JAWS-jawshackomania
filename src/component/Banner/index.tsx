@@ -14,7 +14,6 @@ export const Banner: FC = () => {
     { key: 'awards', label: 'Awards', path: '/awards' },
     { key: 'community', label: 'Community', path: '/community' },
     { key: 'journey', label: 'Journey', path: '/journey' },
-    { key: 'ecoTracking', label: 'Eco Tracking', path: '/ecoTracking' },
     { key: 'league', label: 'League', path: '/league' },
   ];
 

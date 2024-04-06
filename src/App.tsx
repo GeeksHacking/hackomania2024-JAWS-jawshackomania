@@ -4,7 +4,6 @@ import { ProgressPage } from "./pages/progressPage";
 import { AwardsPage } from "./pages/awardsPage";
 import { CommunityPage } from "./pages/communityPage";
 import { JourneyPage } from "./pages/journeyPage";
-import { EcoTrackingPage } from "./pages/ecoTrackingPage";
 import { LeaguePage } from "./pages/leaguePage";
 import { GoalsPage } from "./pages/goalsPage";
 import { EventDetailPage } from "./pages/eventDetailPage";
@@ -17,7 +16,6 @@ function App() {
         <Route path="/awards" Component={AwardsPage} />
         <Route path="/community" Component={CommunityPage} />
         <Route path="/journey" Component={JourneyPage} />
-        <Route path="/ecotracking" Component={EcoTrackingPage} />
         <Route path="/goals" Component={GoalsPage} />
         <Route path="/league" Component={LeaguePage} />
         <Route path="/eventDetail" Component={EventDetailPage} />
