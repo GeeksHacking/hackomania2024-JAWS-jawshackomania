@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import { BackArrow } from "../component/BackArrow";
 import "./leaguePage.css";
 import { ActiveContent } from "../component/ActiveContent";
-import { ExploreContent } from "../component/ExploreContent";
+import { JoinContent } from "../component/JoinContent";
+import { CreateContent } from "../component/CreateContent";
+import { PastContent } from "../component/PastContent";
 
 export const LeaguePage: FC = () => {
   const [selectedOption, setSelectedOption] = useState("Active");
@@ -48,17 +50,16 @@ export const LeaguePage: FC = () => {
             fontWeight: "700",
             backgroundColor: "#d8ebe7",
           }}
-          options={["Active", "Explore", "Join", "Create", "Past"]}
+          options={["Active", "Join","Create", "Past"]}
           value={selectedOption}
           onChange={handleOptionChange}
         />
       </div>
       <div>
         {selectedOption === "Active" && <ActiveContent />}
-        {/* {selectedOption === "Join" && <JoinContent />} */}
-        {selectedOption === "Explore" && <ExploreContent />}
-        {/* {selectedOption === "Create" && <CreateContent />}
-        {selectedOption === "Past" && <PastContent />} */}
+        {selectedOption === "Join" && <JoinContent />}
+        {selectedOption === "Create" && <CreateContent />}
+        {selectedOption === "Past" && <PastContent />}
       </div>
     </PageTemplate>
   );
