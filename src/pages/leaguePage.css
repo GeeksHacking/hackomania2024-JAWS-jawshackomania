@@ -1,0 +1,8 @@
+.league {
+    .ant-segmented-group {
+        justify-content: center;
+    }
+    .ant-segmented-item {
+        padding: 15px
+    }
+}
