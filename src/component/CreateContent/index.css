@@ -1,0 +1,19 @@
+.private:hover {
+  border: 4px solid #5ba894;
+}
+
+.private {
+  border: 4px solid transparent;
+}
+
+.public:hover {
+  border: 4px solid #5ba894;
+}
+
+.public {
+  border: 4px solid transparent;
+}
+
+.card .ant-card-body {
+  display: ruby;
+}
