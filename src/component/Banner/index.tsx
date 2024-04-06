@@ -23,7 +23,7 @@ export const Banner: FC = () => {
       style={{
         flex: 'auto',
         backgroundColor: '#7fb9ba',
-        fontSize: '12px',
+        fontSize: '18px',
         justifyContent: "center",
         fontWeight: "700"
       }}

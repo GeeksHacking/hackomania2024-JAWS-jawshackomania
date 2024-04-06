@@ -1,4 +1,4 @@
-import { Button, Card, Col, Divider, Input, Row, Tag } from "antd";
+import { Badge, Button, Card, Col, Divider, Input, Row, Tag } from "antd";
 import { FC } from "react";
 import { Leaf } from "../Leaf";
 
@@ -35,11 +35,12 @@ export const JoinContent: FC = () => {
           boxShadow: "3px 3px #bcd4d4",
           border: "2px solid #bcd4d4",
           gap: "10px",
+          maxWidth: "80vw"
         }}
       >
         <div style={{ fontSize: "23px" }}>JOIN A PRIVATE LEAGUE?</div>
         <div style={{ gap: "3px", fontWeight: 500 }}>
-          <div>
+          <div style={{textAlign: "center"}}>
             Join your friend's league, compete together for more rewards and{" "}
             <img src="/greenleaf.png" width="15" height="15" alt="" /> !
           </div>
@@ -107,6 +108,11 @@ export const JoinContent: FC = () => {
           <Col span={12}>
             <div>
               <a>
+              <Badge.Ribbon
+                  text="Hot Discussions"
+                  color="red"
+                  style={{ marginTop: "160px" }}
+                >
                 <Card
                   title={
                     <div
@@ -144,6 +150,7 @@ export const JoinContent: FC = () => {
                   <Tag color="blue">Trending</Tag>
                   <Tag color="geekblue">Free</Tag>
                 </Card>
+                </Badge.Ribbon>
               </a>
             </div>
           </Col>

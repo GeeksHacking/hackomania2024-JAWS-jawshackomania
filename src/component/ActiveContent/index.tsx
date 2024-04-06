@@ -1,4 +1,4 @@
-import { Card, Col, Divider, Row, Tag } from "antd";
+import { Badge, Card, Col, Divider, Row, Tag } from "antd";
 import { FC } from "react";
 
 export const ActiveContent: FC = () => {
@@ -22,43 +22,49 @@ export const ActiveContent: FC = () => {
           <Col span={12}>
             <div>
               <a>
-                <Card
-                  title={
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "space-between",
-                        alignContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <div>Lion City Eco Warriors</div>
-                      <img
-                        src="/rightarrow.png"
-                        width="17"
-                        height="17"
-                        alt=""
-                      />
-                    </div>
-                  }
-                  bordered={false}
-                  style={cardStyle}
-                  cover={<img alt="example" src="event10.jpg" />}
+                <Badge.Ribbon
+                  text="Hot Discussions"
+                  color="red"
+                  style={{ marginTop: "180px" }}
                 >
-                  <p>
-                    Leading the charge for sustainability in Singapore, our eco
-                    warriors are dedicated to protecting the environment through
-                    collective action and advocacy.
-                  </p>
+                  <Card
+                    title={
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "row",
+                          justifyContent: "space-between",
+                          alignContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div>Lion City Eco Warriors</div>
+                        <img
+                          src="/rightarrow.png"
+                          width="17"
+                          height="17"
+                          alt=""
+                        />
+                      </div>
+                    }
+                    bordered={false}
+                    style={cardStyle}
+                    cover={<img alt="example" src="event10.jpg" />}
+                  >
+                    <p>
+                      Leading the charge for sustainability in Singapore, our
+                      eco warriors are dedicated to protecting the environment
+                      through collective action and advocacy.
+                    </p>
 
-                  <p>Members: 250</p>
-                  <p>Points: 1200</p>
-                  <p>Started Since: March 15, 2019</p>
-                  <Tag color="#f50">Popular</Tag>
-                  <Tag color="#2db7f5">Tampines</Tag>
-                  <Tag color="#87d068">Energy</Tag>
-                </Card>
+                    <p>Members: 250</p>
+                    <p>Points: 1200</p>
+                    <p>Started Since: March 15, 2019</p>
+                    <Tag color="#f50">Popular</Tag>
+                    <Tag color="#2db7f5">Tampines</Tag>
+                    <Tag color="#87d068">Energy</Tag>
+                  </Card>
+                </Badge.Ribbon>
               </a>
             </div>
           </Col>
@@ -238,42 +244,42 @@ export const ActiveContent: FC = () => {
           <Col span={12}>
             <div>
               <a>
-                <Card
-                  title={
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "space-between",
-                        alignContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <div>Garden By The Bay</div>
-                      <img
-                        src="/rightarrow.png"
-                        width="17"
-                        height="17"
-                        alt=""
-                      />
-                    </div>
-                  }
-                  bordered={false}
-                  style={cardStyle}
-                  cover={<img alt="example" src="event8.jpg" />}
-                >
-                  <p>
-                    Inspired by Singapore's iconic Gardens by the Bay, our
-                    league cultivates a community committed to preserving
-                    nature's beauty and biodiversity through conservation
-                    efforts.
-                  </p>
+                  <Card
+                    title={
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "row",
+                          justifyContent: "space-between",
+                          alignContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div>Garden By The Bay</div>
+                        <img
+                          src="/rightarrow.png"
+                          width="17"
+                          height="17"
+                          alt=""
+                        />
+                      </div>
+                    }
+                    bordered={false}
+                    style={cardStyle}
+                    cover={<img alt="example" src="event8.jpg" />}
+                  >
+                    <p>
+                      Inspired by Singapore's iconic Gardens by the Bay, our
+                      league cultivates a community committed to preserving
+                      nature's beauty and biodiversity through conservation
+                      efforts.
+                    </p>
 
-                  <p>Members: 150</p>
-                  <p>Points: 800</p>
-                  <p>Started Since: December 12, 2015</p>
-                  <Tag color="#36a315">Singapore</Tag>
-                </Card>
+                    <p>Members: 150</p>
+                    <p>Points: 800</p>
+                    <p>Started Since: December 12, 2015</p>
+                    <Tag color="#36a315">Singapore</Tag>
+                  </Card>
               </a>
             </div>
           </Col>
