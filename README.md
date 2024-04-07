@@ -1,4 +1,4 @@
-Hackomania 2024 - Tackling problem statemnent by SP Group
+Hackomania 2024 - Tackling problem statement by SP Group
 
 EcoSync by TEAM JAWS
 - Javier Ong
